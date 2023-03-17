@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from database import Model, engine
-from routers import speedsters
+from lightning.database import Model, engine
+from lightning.routers import speedsters
 
 
 Model.metadata.create_all(bind=engine)

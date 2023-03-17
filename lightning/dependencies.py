@@ -1,7 +1,8 @@
 from functools import lru_cache
 
-import config
-import database
+from lightning import config
+from lightning import database
+
 
 # Вызывается по время внедрения зависимости
 def get_db():
@@ -11,7 +12,8 @@ def get_db():
     finally:
         db.close()
 
+
 # Возврат существующего экземпляра DBSettings вместо создания нового
-@lru_cache 
+@lru_cache
 def get_db_settings() -> config.DBSettings:
     return config.DBSettings()
