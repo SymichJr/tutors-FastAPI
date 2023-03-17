@@ -3,9 +3,8 @@ from pydantic import parse_obj_as
 from typing import List
 from uuid import UUID
 
-from schemas.speedster import Speedster, SpeedsterCreate
-from repositories.speedsters import SpeedstersRepository
-
+from lightning.schemas.speedster import Speedster, SpeedsterCreate
+from lightning.repositories.speedsters import SpeedstersRepository
 
 router = APIRouter(prefix="/speedsters", tags=["speedsters"])
 

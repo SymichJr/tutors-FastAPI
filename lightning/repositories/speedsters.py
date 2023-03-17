@@ -5,9 +5,9 @@ from fastapi.params import Depends
 from pydantic import EmailStr
 from sqlalchemy.orm import Session
 
-from models.speedster import Speedster
-from dependencies import get_db
-from schemas.speedster import SpeedsterCreate
+from lightning.models.speedster import Speedster
+from lightning.dependencies import get_db
+from lightning.schemas.speedster import SpeedsterCreate
 
 
 class SpeedstersRepository:
@@ -33,8 +33,7 @@ class SpeedstersRepository:
             name=speedster.name,
             email=speedster.email,
             gender=speedster.gender,
-           
-velocity_kms_per_hour=speedster.velocity_kms_per_hour,
+            velocity_kms_per_hour=speedster.velocity_kms_per_hour,
             height_in_cm=speedster.height_in_cm,
             weight_in_kg=speedster.weight_in_kg,
             password=faked_pass_hash
