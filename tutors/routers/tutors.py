@@ -3,8 +3,8 @@ from pydantic import parse_obj_as
 from typing import List
 from uuid import UUID
 
-from lightning.schemas.tutor import Tutor, TutorCreate
-from lightning.repositories.tutors import TutorsRepository
+from tutors.schemas.tutor import Tutor, TutorCreate
+from tutors.repositories.tutors import TutorsRepository
 
 router = APIRouter(prefix="/tutors", tags=["tutors"])
 

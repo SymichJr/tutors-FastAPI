@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-from lightning.dependencies import get_db_settings
+from tutors.dependencies import get_db_settings
 
 settings = get_db_settings()
 
