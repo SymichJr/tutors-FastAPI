@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from lightning.database import Model, engine
-from lightning.routers import tutors
+from tutors.database import Model, engine
+from tutors.routers import tutors
 
 
 Model.metadata.create_all(bind=engine)

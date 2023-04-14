@@ -3,7 +3,7 @@ from uuid import uuid4
 from sqlalchemy import Column, String, Float
 from sqlalchemy.dialects.postgresql import UUID
 
-from lightning.database import Model
+from tutors.database import Model
 
 
 class Tutor(Model):

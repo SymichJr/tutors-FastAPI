@@ -1,7 +1,7 @@
 from functools import lru_cache
 
-from lightning import config
-from lightning import database
+from tutors import config
+from tutors import database
 
 
 # Вызывается по время внедрения зависимости

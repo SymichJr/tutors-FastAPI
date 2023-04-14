@@ -5,9 +5,9 @@ from fastapi.params import Depends
 from pydantic import EmailStr
 from sqlalchemy.orm import Session
 
-from lightning.models.tutor import Tutor
-from lightning.dependencies import get_db
-from lightning.schemas.tutor import TutorCreate
+from tutors.models.tutor import Tutor
+from tutors.dependencies import get_db
+from tutors.schemas.tutor import TutorCreate
 
 
 class TutorsRepository:
